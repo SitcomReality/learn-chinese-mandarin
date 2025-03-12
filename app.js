@@ -1,5 +1,4 @@
-import howler from 'howler';
-const { Howl } = howler;
+import { Howl } from 'https://cdn.jsdelivr.net/npm/howler@2.2.3/+esm';
 
 document.addEventListener('DOMContentLoaded', () => {
     // DOM elements
