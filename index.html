@@ -1,0 +1,70 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Chinese Mandarin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "howler": "https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"
+            }
+        }
+    </script>
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Learn Chinese Mandarin</h1>
+            <div class="mode-selector">
+                <button id="category-btn" class="active">Categories</button>
+                <button id="quiz-btn">Quiz</button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="categories-section" class="section">
+                <div class="category-grid">
+                    <!-- Categories will be populated by JS -->
+                </div>
+            </div>
+            
+            <div id="phrases-section" class="section hidden">
+                <button id="back-to-categories" class="back-button">← Back to Categories</button>
+                <h2 id="current-category">Category</h2>
+                <div class="phrase-list">
+                    <!-- Phrases will be populated by JS -->
+                </div>
+            </div>
+            
+            <div id="quiz-section" class="section hidden">
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <h2>What does this mean?</h2>
+                        <div class="chinese-phrase">你好</div>
+                    </div>
+                    <div class="quiz-options">
+                        <!-- Options will be populated by JS -->
+                    </div>
+                    <div class="quiz-feedback hidden">
+                        <div class="feedback-message"></div>
+                        <button class="next-question">Next Question</button>
+                    </div>
+                </div>
+                <div class="quiz-progress">
+                    <span id="score">Score: 0</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Practice your Mandarin pronunciation and vocabulary daily!</p>
+        </footer>
+    </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
