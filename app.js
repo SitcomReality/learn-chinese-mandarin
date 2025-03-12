@@ -1,4 +1,5 @@
-import { Howl } from 'howler';
+import howler from 'howler';
+const { Howl } = howler;
 
 document.addEventListener('DOMContentLoaded', () => {
     // DOM elements
@@ -329,4 +330,3 @@ document.addEventListener('DOMContentLoaded', () => {
         return newArray;
     }
 });
-
